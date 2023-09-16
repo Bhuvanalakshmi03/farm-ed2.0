@@ -1,0 +1,21 @@
+.title1{
+    background-color: rgb(255, 220, 43);
+}
+.nav-item-align{
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+.green{
+    color:green;
+}
+#intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 550px;
+    }
+  }
