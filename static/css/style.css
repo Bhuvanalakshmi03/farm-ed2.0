@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, Times, serif;
+}
 .title1{
     background-color: rgb(255, 220, 43);
 }
@@ -10,12 +14,91 @@
     color:green;
 }
 #intro-example {
-    height: 400px;
+    height: 500px;
   }
 
-  /* Height for devices larger than 992px */
-  @media (min-width: 992px) {
+  /* Height for devices smaller than 992px */
+  @media (min-width:320px) and (max-width: 786px) {
     #intro-example {
-      height: 550px;
+      height: 780px;
     }
   }
+
+  .image-container {
+    position: relative; /* Establish a positioning context for the small image */
+  }
+  
+  .big-image {
+    width: 100%;
+    height: 75%; 
+    margin-top : 10%;
+    margin-left:5% ;/* Maintain aspect ratio */
+    border-radius: 5%;
+  }
+  
+  .small-image {
+    position: absolute; /* Position relative to the image container */
+    bottom: -3%; /* Adjust as needed */
+    right: -12%; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
+    border: 5px solid #00864a;
+    border-radius: 5%;
+  }
+
+  #ex {
+    text-align: center;
+    background-image:
+url("https://t3.ftcdn.net/jpg/06/15/27/50/360_F_615275094_KT1H92eociM1l75LaNP8nAt41DPDbATG.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+#ex2 {
+  text-align: center;
+  background-color:green;
+  color: antiquewhite;
+  background-position: center;
+  background-attachment: fixed;
+  height:150px;
+  width:150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+.hov{
+  width: 15rem;
+  height: 15rem;
+  background-color:rgb(226, 226, 226);
+  border-radius: 15px;
+}
+.hov:hover{
+  background-color: #00864a;
+  color: antiquewhite;
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  color:whitesmoke;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 786px){ 
+  .map{
+    width:fit-content;
+    height: fit-content;
+}}
+  
